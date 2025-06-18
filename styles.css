@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.expense-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+.expense-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.clear-btn {
+    background-color: #e74c3c;
+}
+
+.clear-btn:hover {
+    background-color: #c0392b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+.summary p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.visualization {
+    margin-top: 20px;
+}
+
+.bar-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.bar {
+    flex: 1;
+    background-color: #3498db;
+    transition: height 0.3s;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.bar-label {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .expense-form input, button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .bar-container {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .bar {
+        height: 100px !important;
+        width: 30px;
+    }
+}
